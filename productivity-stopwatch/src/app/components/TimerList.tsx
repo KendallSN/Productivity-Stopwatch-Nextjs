@@ -44,11 +44,8 @@ const TimerList: React.FC = () => {
 
     useEffect(() => {
         if (hasMounted && timers.length === 0) {
-            // Se crean 3 timers por defecto con colores aleatorios
             const defaultTimers: TimerData[] = [
-                { id: Date.now().toString() + "_1", name: 'Timer 1', time: 0, isRunning: false, color: getRandomColor() },
-                { id: Date.now().toString() + "_2", name: 'Timer 2', time: 0, isRunning: false, color: getRandomColor() },
-                { id: Date.now().toString() + "_3", name: 'Timer 3', time: 0, isRunning: false, color: getRandomColor() },
+                { id: Date.now().toString() + "_1", name: 'Timer 1', time: 0, isRunning: false, color: getRandomColor() }
             ];
             setTimers(defaultTimers);
         }
