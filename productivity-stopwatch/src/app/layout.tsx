@@ -8,7 +8,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <header style={{ background: '#f5f5f5', padding: '1rem' }}>
-        <h1>My App</h1>
+        <h1>Productivity Stopwatch</h1>
       </header>
       {children}
       <footer style={{ background: '#f5f5f5', padding: '1rem', textAlign: 'center' }}>
